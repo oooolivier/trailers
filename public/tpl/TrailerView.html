@@ -1,0 +1,9 @@
+<div class="row-fluid">
+    <div class="span12">
+		<h1><%= name %></h1>
+        <p><img id="picture" width="180" src="<%= picture === null ? '/pics/generic.jpg' : '/pics/' + picture %>"/></p>
+        <b>Description</b> :  <%= description %><br/>
+       	<b>Année</b> :  <%= year %><br/><br/>
+        <button type="button" class="btn btn-primary" data-toggle="button" onclick="window.location.href='#trailers/edit/<%= _id %>';">Modifier</button>
+    </div>
+</div>
